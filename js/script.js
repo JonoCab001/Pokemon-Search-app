@@ -26,13 +26,13 @@ const searchPokedex = async () => {
         const { name, id, weight, height, types, stats, sprites } = data;
         
         pokemonName.innerHTML = name.toUpperCase();
-        pokemonId.innerHTML = id;
+        pokemonId.innerHTML = `#${id}`;
         pokemonWeight.innerHTML = `Weight: ${weight}`;
         pokemonHeight.innerHTML = `Height: ${height}`;
         
         pokemonImage.innerHTML = `<img id="sprite" src="${sprites.front_default}">`;
 
-        pokemonTypes.innerHTML = types.map(type => `<span>${type.type.name.toUpperCase()}</span>`).join(" ");
+        pokemonTypes.innerHTML = types.map(type => `<span class="${type.type.name.toLowerCase()}">${type.type.name.toUpperCase()}</span>`).join(" ");
 
         hp.innerHTML = stats[0].base_stat;
         attack.innerHTML = stats[1].base_stat;
