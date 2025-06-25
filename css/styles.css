@@ -182,3 +182,18 @@ td, th {
 .fairy {
     background-color: #ed99ed;
 }
+
+/* Media queries to make layout responsive */
+@media screen and (max-width: 700px) {
+    #pokedex {
+        width: 90%;
+        margin-bottom: 5vh;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1100px) {
+    #pokedex {
+        width: 50%;
+        margin-bottom: 5vh;
+    }
+}
