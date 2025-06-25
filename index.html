@@ -7,16 +7,28 @@
     <title>Pokemon Search App</title>
 </head>
 <body>
-    <div>
-        <input required id="search-input">
-        <button id="search-button">Search</button>
+    <h1>Pokemon Search App</h1>
+
+    <div id="pokedex-container">
+        <div id="Pokedex">
+            <label for="search-input">Enter a Pokemon name or ID</label>
+            <div id="search">
+                <input required id="search-input">
+                <button id="search-button">Search</button>
+            </div>
+        </div>
     </div>
-    <h3 id="pokemon-id"></h3>
-    <h3 id="pokemon-name"></h3>
-    <div id="pokemon-image"></div>
-    <p id="weight"></p>
-    <p id="height"></p>
-    <p id="types"></p>
+    
+    <div id="pokemon-info">
+        <div>
+            <span id="pokemon-id"></span>
+            <span id="pokemon-name"></span>
+        </div>
+        <div id="pokemon-image"></div>
+        <p id="weight"></p>
+        <p id="height"></p>
+        <div id="types"></div>
+    </div>
     
     <table>
         <thead>
@@ -25,27 +37,27 @@
                 <th>Stats</th>
             </tr>
         </thead>
-        <tr id="hp">
+        <tr>
             <td>HP</td>
             <td id="hp"></td>
         </tr>
-        <tr id="attack">
+        <tr>
             <td>Attack</td>
             <td id="attack"></td>
         </tr>
-        <tr id="defense">
+        <tr>
             <td>Defense</td>
             <td id="defense"></td>
         </tr>
-        <tr id="special-attack">
+        <tr>
             <td>Special Attack</td>
             <td id="special-attack"></td>
         </tr>
-        <tr id="special-defense">
+        <tr>
             <td>Special Defense</td>
             <td id="special-defense"></td>
         </tr>
-        <tr id="speed">
+        <tr>
             <td>Speed</td>
             <td id="speed"></td>
         </tr>
